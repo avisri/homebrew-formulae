@@ -13,7 +13,7 @@ Custom SeatGeek Formula for Homebrew
 
 You'll want to tap this repository:
 
-    brew tap seatgeek/formulae
+    brew tap avisri/formulae
 
 And now you can install any of our formula as necessary.
 
@@ -45,7 +45,7 @@ Example:
 
 Running the above on the commandline produces the following output:
 
-		$ brew install ./nginx-sg.rb --add-github-module=agentzh/chunkin-nginx-module --include-module-http_gzip_static_module --add-mdounin-module=ngx_http_auth_request_module#a29d74804ff1
+		$ brew install ./nginx-sg.rb --add-github-module=avisri/chunkin-nginx-module --include-module-http_gzip_static_module --add-mdounin-module=ngx_http_auth_request_module#a29d74804ff1
 		==> Downloading http://nginx.org/download/nginx-1.2.4.tar.gz
 		Already downloaded: /Library/Caches/Homebrew/nginx-sg-1.2.4.tar.gz
 		==> Patching
