@@ -39,22 +39,22 @@ Usage:
 Example:
 
 		brew install nginx-sg \
-			--add-github-module=agentzh/chunkin-nginx-module \
+			--add-github-module=avisri/chunkin-nginx-module \
 			--include-module-http_gzip_static_module \
-			--add-mdounin-module=ngx_http_auth_request_module#a29d74804ff1
+			--add-mdounin-module=avisri/ngx_http_auth_request_module
 
 Running the above on the commandline produces the following output:
 
-		$ brew install ./nginx-sg.rb --add-github-module=avisri/chunkin-nginx-module --include-module-http_gzip_static_module --add-mdounin-module=ngx_http_auth_request_module#a29d74804ff1
-		==> Downloading http://nginx.org/download/nginx-1.2.4.tar.gz
-		Already downloaded: /Library/Caches/Homebrew/nginx-sg-1.2.4.tar.gz
+		$ brew install ./nginx-sg.rb --add-github-module=avisri/chunkin-nginx-module --include-module-http_gzip_static_module --add-github-module=ngx_http_auth_request_module
+		==> Downloading http://nginx.org/download/nginx-1.8.0.tar.gz
+		Already downloaded: /Library/Caches/Homebrew/nginx-sg-1.8.0.tar.gz
 		==> Patching
 		patching file conf/nginx.conf
 		adding extra modules
 		- adding http_gzip_static_module module
-		- adding agentzh from github...
-		- adding ngx_http_auth_request_module from mdounin...
-		==> ./configure --prefix=/usr/local/Cellar/nginx-sg/1.2.4 --with-http_ssl_module --with-pcre --with-ipv6 --with-cc-opt=-I/usr/local/include --with-ld-opt=-L/usr/local/lib --conf-path=/usr/local/etc/nginx/nginx.conf --pid-path=/usr/local/var/run/nginx.pid --lock-path=/
+		- adding chunkin-nginx-module from github...
+		- adding ngx_http_auth_request_module from github...
+		==> ./configure --prefix=/usr/local/Cellar/nginx-sg/1.8.0 --with-http_ssl_module --with-pcre --with-ipv6 --with-cc-opt=-I/usr/local/include --with-ld-opt=-L/usr/local/lib --conf-path=/usr/local/etc/nginx/nginx.conf --pid-path=/usr/local/var/run/nginx.pid --lock-path=/
 		==> make
 		==> make install
 		==> Caveats
@@ -67,13 +67,13 @@ Running the above on the commandline produces the following output:
 
 		You can start nginx automatically on login running as your user with:
 		  mkdir -p ~/Library/LaunchAgents
-		  cp /usr/local/Cellar/nginx-sg/1.2.4/homebrew.mxcl.nginx-sg.plist ~/Library/LaunchAgents/
+		  cp /usr/local/Cellar/nginx-sg/1.8.0/homebrew.mxcl.nginx-sg.plist ~/Library/LaunchAgents/
 		  launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.nginx-sg.plist
 
 		Though note that if running as your user, the launch agent will fail if you
 		try to use a port below 1024 (such as http's default of 80.)
 		==> Summary
-		/usr/local/Cellar/nginx-sg/1.2.4: 9 files, 900K, built in 28 seconds
+		/usr/local/Cellar/nginx-sg/1.8.0: 9 files, 900K, built in 28 seconds
 
 
 ## License
