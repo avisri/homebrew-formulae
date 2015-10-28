@@ -1,3 +1,19 @@
+#Security Note
+	For folks who want to build it from scratch 
+	I recomend you download the formula and hack it to make it use local sources .
+	It is that simple ! 
+
+#Credits
+   	SeatGeek/homebrew-formulae 
+
+#Changes
+	* Copied all to github 
+	* 	Github will be the only external depedency for 2 modules
+	* 	*chunkin-nginx-module
+	* 	*ngx_http_auth_request_module
+	* Changed sha and tar filename to reflect 1.8.0 
+------- Mostly in its original format --- 
+
 # homebrew-formulae
 
 Custom SeatGeek Formula for Homebrew
@@ -33,7 +49,8 @@ Lines 27-33, 66-73, and 82-98 are the patches to the real existing nginx formula
 Usage:
 
 * `--add-github-module=USERNAME/REPOSITORY`: Adds an nginx module from github. Requires `git`.
-* `--add-mdounin-module=MODULE_NAME`: Adds an nginx module from mdounin's hg repo (http://mdounin.ru/hg/)
+*  Deplrecated : `--add-mdounin-module=MODULE_NAME`: Adds an nginx module from mdounin's hg repo (http://mdounin.ru/hg/)
+*  Moudin has a github src which I have cloned to use . ( just want to minimize the number of external sources).
 * `--include-module-MODULE_NAME`: Adds the `--with-MODULE_NAME` flag for a module that comes with the nginx source but not enabled by default
 
 Example:
